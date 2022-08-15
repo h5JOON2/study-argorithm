@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main(){
+    char A;
+    scanf("%s", &A);
+    printf("%d",(int)A);
+}
+
+#include <stdio.h>
+int main(){
+    int N,NN;
+    char A;
+    scanf("%d", &N);
+    while(i<N){
+        scanf("%s", &A);
+        while(ii<NN){
+            scanf("%s", &A);
+            printf("%s",A);                                    /////////////////////??????????
+            ii+=1;
+    }
+        printf("\n");
+        i+=1;
+    }
+
+    
+}
