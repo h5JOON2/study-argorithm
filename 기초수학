@@ -1,0 +1,50 @@
+
+#include <stdio.h>
+int main(){
+    int A,B,C;
+    int i=0;
+    scanf("%d %d %d", &A,&B,&C);
+    if(B>=C){
+        printf("-1");
+    }
+    else{
+        printf("%d",A/(C-B)+1);
+    }
+}
+#include <stdio.h>
+int main(){
+    int A;
+    int i=N=B=0;
+    scanf("%d",&N);
+    while(i<N){
+        scanf("%d",&A);
+        if (IsPrimeNumber(A)) //i가 소수라면
+        {
+            B+=1;
+        }
+        i+=1;
+    }
+    printf("%d",B);
+}
+
+#include <stdio.h>
+int main(){
+    int A;
+    long long B=1;
+    int i=1;
+    scanf("%d",&A);
+    if (A==0){
+        printf("%lli",B);
+        
+    }
+    else{
+        while(i<=A){
+            B*=i;
+            i+=1;
+        }
+        printf("%lld",B);
+    }
+    
+
+        
+}
