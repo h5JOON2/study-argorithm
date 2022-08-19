@@ -52,3 +52,51 @@ int main(){
 
         
 }
+버블정렬 + 이진검색(진행중)
+#include <stdio.h>
+int main(){
+    int N,M;
+    int i=0;
+    int o=0,oo=0;
+    int BLANK;
+    scanf("%d",&N);
+    int LST[N];
+    int A;
+    while(i<N){
+        scanf("%d",&A);
+        LST[i]=A;
+        i+=1;
+    }
+    while(oo<N-1){
+        while(o<N-1-oo){
+            if(LST[o]<LST[o+1]){
+                BLANK=LST[o];
+                LST[o]=LST[o+1];
+                LST[o+1]=BLANK;
+           
+            }
+            o+=1;
+        
+        }
+        oo+=1;
+        o=0;
+    }
+    scanf("%d",&M);
+    i=0;
+    o=0;
+    oo=N/2;
+    int LST2[M];
+    while(i<M){
+        scanf("%d",&A);
+        while (o<N){
+            if(oo=)
+            
+        }
+        
+        i+=1;
+    }
+        
+  
+
+        
+}
