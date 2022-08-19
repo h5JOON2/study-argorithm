@@ -1,0 +1,54 @@
+#include <stdio.h>
+int main(){
+    int A;
+    long long B=1;
+    int i=1;
+    scanf("%d",&A);
+    if (A==0){
+        printf("%lli",B);
+        
+    }
+    else{
+        while(i<=A){
+            B*=i;
+            i+=1;
+        }
+        printf("%lld",B);
+    }
+    
+
+        
+}
+#include <stdio.h>
+int main(){
+    int N,M;
+    int i=0;
+    int A;
+    int o=0,oo,ooo;
+    int ANS;
+    scanf("%d %d\n",&N,&M);
+    int LST[N];
+    while(i<N){
+        scanf(%d,&A);
+        LST[i]=A;
+        i+=1;
+    }
+    while(o<N){
+        while(oo<N){
+            while(ooo<N){
+                if(M-ANS>M-LST[o]-LST[oo]-LST[ooo] || !ANS){
+                    ANS=LST[o]+LST[oo]+LST[ooo];
+                      
+                }
+                ooo+=1;
+            }
+            oo+=1;
+            ooo=oo+1;
+        }
+        o+=1;
+        oo=o+1;
+    }
+    printf("%d",ANS);
+
+        
+}
