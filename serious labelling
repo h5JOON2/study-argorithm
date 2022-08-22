@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+
+typedef struct stack{
+    int top;
+    struct stack *NEXTTOP;
+}
+void push(int x,struct stack *PRIORTOP){
+    PRIORTOP->NEXTTOP=PRIORTOP;
+    PRIORTOP->top=x;
+    
+}
+int main() {
+    
+}
