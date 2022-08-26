@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() {
+    int LAST[4];
+    int i=0;
+    int S=0;
+    int A=0;
+    while(i<2){
+        scanf("%d",&A);
+        LAST[i]=A;
+        i+=1;
+    }
+    while(i<4){
+        scanf("%d",&A);
+        LAST[i]=A-LAST[i-2];
+        i+=1;
+    }
+    i=0;
+    while(i<4){
+        if(!S || LAST[i]<S){
+            S=LAST[i];
+            
+        }
+        i+=1;
+    }
+    printf("%d",S);
+    return 0;
+}
