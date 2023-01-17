@@ -1,0 +1,27 @@
+using System;
+namespace goorm
+{
+	struct person{
+				public string name;
+				public float height;
+			}
+	class Program
+	{
+		
+		static void Main(string[] args)
+		{
+			string[] input;
+			int N,k;
+			string[] imsi;
+			
+			input = Console.ReadLine().Split();
+			N= int.Parse(input[0]);k=int.Parse(input[1]);
+			person[] goormlist = new person[N];
+			for(int i=0;i<N;i++){
+				imsi = Console.ReadLine().Split();
+				goormlist[i].name=imsi[0]; goormlist[i].height=float.Parse(imsi[1]);
+			}
+			
+		}
+	}
+}
