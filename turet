@@ -64,4 +64,32 @@ for i in range(0,A):
         D+=1
 print(D)
 
+--소수찾기2--
+A=int(input())
+B=int(input())
+D=-1
+D2=0
+def sosucheck(a):
+    c=0
+    for b in range(1,a+1):
+        if (a%b == 0):
+            c+=1
+    if(c==2):
+        return 1
+    else:
+        return 0
+for i in range(A,B+1):
+    
+    if(sosucheck(i)==1):
+        if(D==-1):
+            D2=i
+            D+=1
+        D+=i
+
+print(D)
+if (not(D == -1)):
+
+    print(D2)
+
+
 
