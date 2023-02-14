@@ -1,0 +1,35 @@
+A=int(input())
+for i in range(0,A):
+    B=input().split()
+    R=float(int(B[2])+int(B[5]))
+    XY=((int(B[0])-int(B[3]))**2+(int(B[1])-int(B[4]))**2)**0.5
+    if(int(B[2])<int(B[5])):
+
+        r1=int(B[2])
+        r2=int(B[5])
+    else:
+        r2=int(B[2])
+        r1=int(B[5])
+    if(XY==0.0):
+        
+        if(r1==r2):
+            if(r1==0):
+                print(1)
+            else:
+                print(-1)
+        print(0)
+    else:
+        if(XY>r1 and XY>r2):
+            if(XY>r1+r2):
+                print(0)
+            if(XY==r1+r2):
+                print(1)
+            else:
+                print(2)
+        else:
+            if (XY==r2-r1):
+                print(1)
+            if(XY>r2-r1):
+                print(2)
+            else:
+                print(0)
